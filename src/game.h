@@ -18,6 +18,7 @@ namespace game {
         byte chunksLoaded[8];
         byte state = 0;
         long long lastKeepalive;
+        uint32_t lastChunkTime = 0;
 
         void unloadAllChunks() {
             for (byte x = 0; x < 8; ++x) {
